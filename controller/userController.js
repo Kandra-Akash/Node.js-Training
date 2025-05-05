@@ -91,7 +91,7 @@ exports.signUp = async (req, res) => {
   
       return res.status(200).json({ users });
     } catch (error) {
-      console.log(error.message);
+      // console.log(error.message);
       return res.status(500).json({ message: "Error fetching users" });
     }
   };
